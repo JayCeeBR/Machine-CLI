@@ -1,5 +1,5 @@
 # Machine
-Engima M1 Machine
+Engima M3 Machine
 
 CLI Machine
 
