@@ -7,9 +7,9 @@ class Enigma(object):
         self.numcycles = 0
         self.rotors = []
         '''Enigma Setup '''
-        self.rotorsettings = [("III", 0),
+        self.rotorsettings = [("VIII", 0),
                             ("V", 0),
-                            ("I", 0),
+                            ("II", 0),
                             ("IV", 0)]
         self.reflectorsetting = "D"
 
@@ -20,9 +20,12 @@ class Enigma(object):
         self.reflector = Reflector(self.reflectorsetting)
 
     def print_setup(self):
+        print("Rotors:")
         for r in self.rotors:
             print(r.setting, "\t", r.sequence)
+        print("\nReflector: ")
         print(self.reflector.setting, "\t", self.reflector.sequence, "\n")
+        print("\nPlugboard:")
         print(self.plugboard.mapping, "\n")
 
     def reset(self):

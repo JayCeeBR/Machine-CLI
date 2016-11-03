@@ -8,6 +8,8 @@ from reflector import *
 class Init(object):
 
 	def __init__(self):
+		print(" ######### Enigma Machine CLI ########### ")
+		print("\n")
 		enigma = Enigma()
 		recv = ""
 		try:
